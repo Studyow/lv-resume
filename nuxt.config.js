@@ -48,7 +48,7 @@ export default {
     baseURL: '/',
   },
   ssr: true,
-  target: 'static',
+  // target: 'static',
   app: {
     baseURL: '/lv-resume/' // baseURL: '/<repository>/'
   },
