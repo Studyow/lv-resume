@@ -9,7 +9,7 @@
       light
     >
 
-      <v-toolbar-title >Contact</v-toolbar-title>
+      <v-toolbar-title color="#fff" style="color: #fff">Contact</v-toolbar-title>
     </v-toolbar>
 
     <v-list color="grey lighten-5">
@@ -22,7 +22,7 @@
       >
         <template v-slot:activator>
           <v-list-item-content>
-            <v-list-item-title v-text="item.title"></v-list-item-title>
+            <v-list-item-title>{{ item.title }}</v-list-item-title>
           </v-list-item-content>
         </template>
 
@@ -32,7 +32,7 @@
           class="pl-4"
         >
           <v-list-item-content>
-            <v-list-item-title v-text="child.title" class="float-left"></v-list-item-title>
+            <v-list-item-title class="float-left">{{ child.title }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list-group>
