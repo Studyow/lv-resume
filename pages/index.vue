@@ -16,7 +16,7 @@
 
           <v-layout row wrap class="d-flex justify-center">
 
-              <v-flex xs12 md3>
+              <v-flex xs12 md4 lg3>
 
                 <div>
                   <Profile/>
@@ -34,7 +34,7 @@
 
               </v-flex>
               
-              <v-flex xs12 md7>
+              <v-flex xs12 md8 lg7>
 
                 <div>
                   <h5>CAREER OBJECTIVE</h5>
@@ -64,7 +64,7 @@
 
               </v-flex>
 
-              <v-flex xs6 md2>
+              <v-flex xs12 md12 lg2>
                 <Location/>
                 <!-- <h5>CONTACT ME</h5> -->
                 <ContactMe/>

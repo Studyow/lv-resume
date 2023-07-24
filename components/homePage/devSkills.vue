@@ -12,7 +12,7 @@
                 outlined
             >
                 <v-list subheader>
-                <v-subheader>Recent language</v-subheader>
+                <v-subheader>I USE</v-subheader>
 
                 <v-list-item
                     v-for="chat in recent"
@@ -26,7 +26,7 @@
                     </v-list-item-avatar>
 
                     <v-list-item-content>
-                    <v-list-item-title v-text="chat.title"></v-list-item-title>
+                    <v-list-item-title>{{ chat.title }}</v-list-item-title>
                     </v-list-item-content>
 
                 </v-list-item>

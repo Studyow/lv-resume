@@ -16,13 +16,17 @@
 
             <v-layout row wrap class="d-flex justify-center">
 
-                <v-flex xs12 md3>
+                <v-flex xs12 md12>
+                    <DashHeader/>
+                </v-flex>
+
+                <v-flex xs4 md3>
                     <!-- <Profile_dev/> -->
                     <DevSkills/>
                     <!-- <Contact/> -->
                 </v-flex>
                 
-                <v-flex xs12 md6>
+                <v-flex xs8 md6>
                     <!-- <Experience/> -->
                     <FrontEnd/>
                     <div class="mt-4">
@@ -30,8 +34,7 @@
                     </div>
                 </v-flex>
 
-                <v-flex xs6 md3>
-                    <DashHeader/>
+                <v-flex xs12 md3>
                     <Current/>
                     <Language/>
                 </v-flex>

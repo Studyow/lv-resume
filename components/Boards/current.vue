@@ -20,18 +20,17 @@
           <v-list-item :key="item.title">
             <template v-slot:default="{ active }">
               <v-list-item-content>
-                <v-list-item-title v-text="item.title"></v-list-item-title>
+                <v-list-item-title>{{ item.title }}</v-list-item-title>
 
                 <v-list-item-subtitle
                   class="text--primary"
-                  v-text=""
-                ></v-list-item-subtitle>
+                >{{ item.headline }}</v-list-item-subtitle>
 
-                <v-list-item-subtitle v-text="item.subtitle"></v-list-item-subtitle>
+                <v-list-item-subtitle>{{ item.subtitle }}</v-list-item-subtitle>
               </v-list-item-content>
 
               <v-list-item-action>
-                <v-list-item-action-text v-text="item.action"></v-list-item-action-text>
+                <v-list-item-action-text>{{ item.action }}</v-list-item-action-text>
 
                 <v-icon
                   v-if="!active"
@@ -64,17 +63,29 @@
 <script>
   export default {
     data: () => ({
-      selected: [0,1,2],
+      selected: [0,2,3],
       items: [
         {
-          action: 'Jan 2021',
-          headline: '',
+          action: 'July 2023',
+          headline: 'gcash, paymaya, stripe, paypal',
+          subtitle: `IPFS for Infura with mumbai wallet`,
+          title: 'Next JS',
+        },
+        {
+          action: 'June 2023',
+          headline: 'Ethereum',
+          subtitle: `IPFS for Infura with mumbai wallet`,
+          title: 'Eth web3 dev',
+        },
+        {
+          action: 'Jan 2022',
+          headline: 'Nuxt JS',
           subtitle: `Its a vue js frame work for a better looking pages`,
           title: 'vuetify',
         },
         {
           action: 'Feb 2021',
-          headline: 'Summer BBQ',
+          headline: 'using api`s',
           subtitle: `it's fast , light and wide`,
           title: 'Express JS',
         },

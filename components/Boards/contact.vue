@@ -32,7 +32,9 @@
           class="pl-4"
         >
           <v-list-item-content>
-            <v-list-item-title class="float-left">{{ child.title }}</v-list-item-title>
+            <v-list-item-title class="float-left">
+              {{ child.title }}
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list-group>
