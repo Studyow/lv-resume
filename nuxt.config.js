@@ -49,8 +49,12 @@ export default {
   },
   ssr: true,
   // target: 'static',
-  app: {
-    baseURL: '/lv-resume/' // baseURL: '/<repository>/'
+  // app: {
+  //   baseURL: '/lv-resume/' // baseURL: '/<repository>/'
+  // },
+  target: 'static',
+  router: {
+    base: '/lv-resume/'
   },
   
 
